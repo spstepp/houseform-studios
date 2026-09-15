@@ -63,3 +63,10 @@ footer {
   font-size: 0.8rem;
 }
 footer p { margin: 0; }
+.cta { margin: 1.5rem 0 0; }
+.cta a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+.cta a:hover { color: var(--muted); }
