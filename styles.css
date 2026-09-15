@@ -1,0 +1,65 @@
+:root {
+  --bg: #f4f1ea;
+  --ink: #1c1a17;
+  --muted: #6b645a;
+  --line: rgba(28, 26, 23, 0.18);
+  --max: 28rem;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+}
+.wrap {
+  width: min(100% - 2.5rem, var(--max));
+  margin: auto;
+  padding: 4rem 0 3rem;
+  text-align: center;
+}
+.eyebrow {
+  margin: 0 0 1.25rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.rule {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--muted);
+  margin: 0 auto 1.75rem;
+  max-width: 10rem;
+}
+.rule::before, .rule::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line);
+}
+.dot { font-size: 0.9rem; line-height: 1; }
+h1 {
+  margin: 0 0 0.75rem;
+  font-weight: 400;
+  font-size: clamp(1.75rem, 5vw, 2.35rem);
+  letter-spacing: -0.01em;
+}
+.lede {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+footer {
+  padding: 1.5rem 1rem 2rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+footer p { margin: 0; }
